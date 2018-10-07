@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import time
+import math
+
+#initiation
+a = []
+listmax = int(input("Up to what number? "))
+starttime = time.time()
+
+#main
+for x in range(2,listmax):
+	sum = 0
+	for i in range(2,math.floor(math.sqrt(x))+1):
+		if x % i == 0:
+			sum += 1
+	if sum == 0:
+		a.append(x)
+
+#printing
+print(time.time()-starttime)
+print(len(a))

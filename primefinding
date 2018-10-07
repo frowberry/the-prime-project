@@ -1,0 +1,10 @@
+a = list(range(10))
+for x in range(10):
+	prime = 2
+	print(prime)
+	for i in range(x+1,len(a)):
+		if i % prime == 0:
+			a[i] = False
+	prime =3 
+
+print(a)

@@ -1,0 +1,14 @@
+import time
+a = []
+listmax = int(input("Up to what number? "))
+starttime = time.time()
+for x in range(2,listmax):
+	sum = 0
+	for i in range(2,x):
+		if x % i == 0:
+			sum += 1
+	if sum == 0:
+		a.append(x)
+print(time.time()-starttime)
+print(len(a))
+
